@@ -1,0 +1,19 @@
+@mixin padding-btn
+{
+    padding: 35px 70px 35px 70px;
+}
+
+@mixin btn
+{
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    font-size: $font-size-btn;
+    color: white;
+    @include padding-btn;
+    border-radius: $border-radius-btn;
+    border: none;
+
+    &:hover
+    {
+        background: lighten($color-secondary, 10);  
+    }
+}

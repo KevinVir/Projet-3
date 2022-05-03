@@ -1,0 +1,26 @@
+footer
+{
+    background-color: $color-footer;
+    color: white;
+    width: 100%;
+    margin-top: 150px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    ul
+    {
+        list-style-type: none;
+        
+        li
+        {
+            margin-left: 15px;
+        }
+    }
+
+    h1
+    {
+        letter-spacing: 2px;
+        font-size: 1em;
+        margin-left: 60px;
+    }
+}
