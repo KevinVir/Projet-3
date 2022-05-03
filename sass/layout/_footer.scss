@@ -7,20 +7,32 @@ footer
     padding-top: 40px;
     padding-bottom: 70px;
 
+    h1
+    {
+        letter-spacing: 2px;
+        font-size: 1em;
+        margin-left: $margin-left-h1-footer;
+        padding-bottom: 25px;
+    }
+
     ul
     {
         list-style-type: none;
         
         li
         {
-            margin-left: 15px;
+            line-height: 80px;
+            margin-left: $margin-left-li-footer;
         }
-    }
+            a
+            {
+                text-decoration: none;
+                color: white;
 
-    h1
-    {
-        letter-spacing: 2px;
-        font-size: 1em;
-        margin-left: 60px;
+                &.iconfooter
+                {
+                    margin-left: $margin-left-li-footer +27px;
+                }
+            }
     }
 }
