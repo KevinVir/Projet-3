@@ -1,3 +1,38 @@
+@mixin underline-title-menu
+{
+    border-bottom: 3px $color-tertiary solid;
+    width: 43px;
+}
+
+@mixin border-section
+{
+    border-radius: 50px 50px 0px 0px;
+}
+
+@mixin card
+{
+    background-color: white;
+    margin-right: $margin-card;
+    margin-left: $margin-card;
+    margin-top: $margin-card;
+    border-radius: 20px;
+    height: 80px;
+
+}
+
+@mixin margin-card-body
+{
+    margin-left: $margin-card + 5px;
+    margin-top: $margin-card - 40px;
+    margin-right: $margin-card + 5px;
+}
+
+@mixin a-modif
+{
+    text-decoration: none;
+    color: black;
+}
+
 @mixin padding-btn
 {
     padding: 35px 70px 35px 70px;
@@ -8,7 +43,7 @@
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     font-size: $font-size-btn;
     color: white;
-    @include padding-btn;
+    @include padding-btn; 
     border-radius: $border-radius-btn;
     border: none;
 

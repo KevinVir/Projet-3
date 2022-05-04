@@ -1,0 +1,19 @@
+.card
+{
+    @include card;
+
+    .card-title
+    {
+        display: flex;
+        align-items: center;
+        font-weight: $card-title-bold;
+        margin-left: $margin-card + 5px;
+    }
+
+    .card-body
+    {
+        display: flex;
+        justify-content: space-between;
+        @include margin-card-body;
+    }
+}

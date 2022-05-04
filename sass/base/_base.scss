@@ -13,6 +13,9 @@ main
 {
     img
     {
-        width: 600px;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        margin-top: $margin-bottom-img-section;
     }
 }

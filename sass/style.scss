@@ -1,7 +1,10 @@
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+@import "./pages/work.scss";
+@import "./pages/cards.scss";
+@import "./layout/header.scss";
 @import "./components/buttons.scss";
 @import "./layout/footer.scss";
 @import "./base/base.scss";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
