@@ -1,16 +1,17 @@
 header
 {  
-    width: 70%;
+    width: 50%;
     margin-top: 20px;
     margin-left: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     img
     {
         width: 80%;
         object-fit: cover;
+        margin-left: 80px;
     }
 
     a

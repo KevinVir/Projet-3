@@ -1,3 +1,55 @@
+.card_menu
+{
+    margin: auto;
+    border: 0px white solid;
+    background-color: white;
+    border-radius: 20px;
+    height: 250px;
+    margin-right: $margin-card;
+    margin-left: $margin-card;
+    margin-top: $margin-card;
+    @include box-shadow;
+    position: relative;
+
+    a 
+    {
+        @include a-modif
+    }
+
+    .news
+    {
+        @include block-news;
+
+        p
+        {
+            color: darken($color-tertiary, 35);
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    }
+
+    img
+    {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 174px;
+        object-fit: cover;
+    }
+
+    .card-body
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include margin-interior-card
+    }
+
+    .card-title
+    {
+        line-height: 7px;
+    }
+}
+
 .card
 {
     @include card;

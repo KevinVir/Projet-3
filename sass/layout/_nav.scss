@@ -1,0 +1,31 @@
+nav
+{
+    ul
+    {
+        list-style-type: none;
+        border: 3px red solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 290px;
+        padding-left: 0px;
+
+        li
+        {
+            border: 3px $color-homepage-hautdepage solid;
+            background: $color-homepage-hautdepage;
+            text-align: center;
+            border-radius: 20px;
+            height: 80px;
+            width: 90%;
+
+            &:before
+            {
+                content: "•"; color: $color-primary;
+                display: inline-block;
+                margin-left: -1em;
+            }
+        }
+    }
+}

@@ -1,4 +1,18 @@
-section
+.section_homepage
+{
+    background-color: $color-section;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 
+    {
+        margin-left: $margin-card;
+    }
+}
+
+.section_pagemenu
 {
     background-color: $color-section;
     width: 100%;
@@ -9,8 +23,9 @@ section
 
     .titlemenu
     {
+        @include margin-title-menu;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -18,5 +33,10 @@ section
     {
         @include underline-title-menu;
         margin-left: $margin-card;
+    }
+
+    .platmenu, .dessertmenu
+    {
+        margin-top: $margin-top-card;
     }
 }

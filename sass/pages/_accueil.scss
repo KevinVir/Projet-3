@@ -1,0 +1,27 @@
+#hautdepage
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 332px;
+    border: 3px $color-homepage-hautdepage solid;
+    background-color: $color-homepage-hautdepage;
+
+    .marker
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102%;
+        height: 50px;
+        border: 3px $color-homepage-localisation;
+        border-top: 3px $color-homepage-border-top solid;
+        background-color: $color-homepage-localisation;
+    }
+
+    .fa-map-marker
+    {
+        padding-right: 15px;
+    }
+}
