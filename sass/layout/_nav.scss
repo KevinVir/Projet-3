@@ -1,9 +1,15 @@
 nav
 {
+    margin-top: 55px;
+    margin-bottom: 55px;
+
+    h2 
+    {
+        margin-left: $margin-card + 5px;
+    }
+
     ul
     {
-        list-style-type: none;
-        border: 3px red solid;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -11,21 +17,49 @@ nav
         height: 290px;
         padding-left: 0px;
 
+
+
         li
         {
-            border: 3px $color-homepage-hautdepage solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px $color-homepage-hautdepage solid;
             background: $color-homepage-hautdepage;
-            text-align: center;
+            -webkit-box-shadow: 3px 2px 12px -9px rgba(0,0,0,0.95); 
+            box-shadow: 3px 2px 12px -9px rgba(0,0,0,0.95);
             border-radius: 20px;
             height: 80px;
             width: 90%;
 
-            &:before
+
+            &:hover
             {
-                content: "•"; color: $color-primary;
-                display: inline-block;
-                margin-left: -1em;
+                background: lighten($color-primary, 36);
+
+                .fa-mobile-screen-button, .fa-bars, .fa-store
+                {
+                    color: $color-primary;
+                }
+            }
+
+            p 
+            {
+                background-color: $color-primary;
+                border-radius: 50%;
+                padding: 10px;
+            }
+
+            a 
+            {
+                @include a-modif;
             }
         }
+    }
+
+    .fa-mobile-screen-button, .fa-bars, .fa-store
+    {
+       margin-right: 25px;
+       color: $color-icon-nav;
     }
 }

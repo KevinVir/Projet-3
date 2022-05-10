@@ -8,7 +8,7 @@ footer
 
     img
     {
-        width: 39%;
+        width: 145px;
         margin-left: $margin-left-h1-footer;
         padding-bottom: 5px;
     }
@@ -16,7 +16,8 @@ footer
     ul
     {
         list-style-type: none;
-        margin-left: $margin-left-li-footer - 45px;
+        padding-left: 0px;
+        margin-left: $margin-left-li-footer;
         
         li
         {
