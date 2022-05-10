@@ -13,6 +13,13 @@ main {
   margin-top: -10px;
 }
 
+.imagetest img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin-top: -200px;
+}
+
 .btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
@@ -143,6 +150,7 @@ footer ul a.iconfooter {
   height: 332px;
   border: 3px #F6F6F6 solid;
   background-color: #F6F6F6;
+  margin-top: 10px;
 }
 #hautdepage .marker {
   display: flex;
@@ -167,6 +175,7 @@ footer ul a.iconfooter {
 }
 .section_homepage h2 {
   margin-left: 15px;
+  margin-top: 60px;
 }
 
 .section_pagemenu {
@@ -191,6 +200,13 @@ footer ul a.iconfooter {
 }
 .section_pagemenu .platmenu, .section_pagemenu .dessertmenu {
   margin-top: 40px;
+}
+
+.image_menu img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin-top: -200px;
 }
 
 .card_menu {
@@ -263,6 +279,10 @@ footer ul a.iconfooter {
   margin-left: 20px;
   margin-top: -25px;
   margin-right: 20px;
+}
+
+.last_menu {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,3 +13,14 @@ main
 {
     margin-top: -10px;
 }
+
+.imagetest
+{
+    img
+    {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        margin-top: $margin-top-img-section;
+    }
+}
