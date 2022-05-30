@@ -1,0 +1,19 @@
+{
+  "name": "p3_pate_kevin",
+  "version": "1.0.0",
+  "description": "projet3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinVir/Projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinVir/Projet-3/issues"
+  },
+  "homepage": "https://github.com/KevinVir/Projet-3#readme"
+}
