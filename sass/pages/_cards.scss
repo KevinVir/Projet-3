@@ -5,11 +5,25 @@
     background-color: white;
     border-radius: 20px;
     height: 250px;
-    margin-right: $margin-card;
-    margin-left: $margin-card;
-    margin-bottom: $margin-card;
-    @include box-shadow;
+    margin: 0 15px 15px 15px;
+    -webkit-box-shadow: 2px 2px 12px -11px rgba(0,0,0,0.95); 
+    box-shadow: 2px 2px 12px -11px rgba(0,0,0,0.95);
     position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet
+    {
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    @include desktop
+    {
+        width: 300px;
+        height: 180px;
+    }
 
     a 
     {
@@ -34,6 +48,11 @@
         width: 100%;
         height: 174px;
         object-fit: cover;
+
+        @include desktop
+        {
+            height: 110px;
+        }
     }
 
     .card-body
@@ -41,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include margin-interior-card
+        margin: 0 $margin15;
     }
 
     .card-title
@@ -58,19 +77,26 @@
     {
         display: flex;
         align-items: center;
-        font-weight: $card-title-bold;
-        margin-left: $margin-card + 5px;
+        font-size: 0.94em;
+        margin-left: $margin15;
+        margin-top: -8px;
     }
 
     .card-body
     {
         display: flex;
         justify-content: space-between;
-        @include margin-card-body;
-    }
-}
+        margin: -29px 20px 0 15px;
 
-.last_menu
-{
-    margin-bottom: 50px;
+         .para-body
+
+        {
+            width: 89%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 0.97em;
+        }
+    
+    }
 }

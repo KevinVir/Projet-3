@@ -3,26 +3,40 @@ footer
     background-color: $color-footer;
     color: white;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 0;
 
     img
     {
-        width: 145px;
-        margin-left: $margin-left-h1-footer;
+        width: 144px;
+        margin: 10px 0 0 30px;
         padding-bottom: 5px;
+
+        @include tablet
+        {
+            display: block;
+            margin: auto;
+            width: 180px;
+            margin-bottom: 35px;
+        }
     }
 
     ul
     {
         list-style-type: none;
         padding-left: 0px;
-        margin-left: $margin-left-li-footer;
+        margin-left: $margin15;
+
+        @include tablet
+        {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.2em;
+        }
         
         li
         {
             line-height: 30px;
-            margin-left: $margin-left-li-footer;
+            margin-left: $margin15;
         }
             a
             {
@@ -31,7 +45,7 @@ footer
 
                 &.iconfooter
                 {
-                    margin-left: $margin-left-li-footer;
+                    margin-left: $margin15;
                 }
             }
     }

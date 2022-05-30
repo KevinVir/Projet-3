@@ -2,25 +2,27 @@ body
 {
     margin: 0;
     font-family: 'roboto', sans-serif;
-}
 
-h1
-{
-    font-family: 'Shrikhand', sans-serif;
-}
-
-main 
-{
-    margin-top: -10px;
-}
-
-.imagetest
-{
-    img
+    @include desktop
     {
-        width: 100%;
-        object-fit: cover;
-        position: absolute;
-        margin-top: $margin-top-img-section;
+        max-width: 1279px;
+        margin: auto;
+        background: linear-gradient($color-primary, $color-secondary);
+    }
+
+    h1
+    {
+        font-family: 'Shrikhand', sans-serif;
+    }
+
+    main 
+    {
+        margin-top: -10px;
+
+        @include desktop
+        {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

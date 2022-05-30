@@ -1,42 +1,28 @@
 @mixin underline-title-menu
 {
     border-bottom: 3px $color-tertiary solid;
-    height: 35px;
+    height: 30px;
     width: 43px;
-}
 
-@mixin border-section
-{
-    border-radius: 50px 50px 0px 0px;
-}
-
-@mixin box-shadow
-{
-    -webkit-box-shadow: 2px 2px 12px -11px rgba(0,0,0,0.95); 
-    box-shadow: 2px 2px 12px -11px rgba(0,0,0,0.95);
-}
-
-@mixin margin-title-menu
-{
-    margin: $margin-card +50px $margin-card +20 $margin-card $margin-card +5px;
+    @include desktop
+    {
+        height: 35px;
+    }
 }
 
 @mixin card
 {
     background-color: white;
-    margin-right: $margin-card;
-    margin-left: $margin-card;
-    margin-top: $margin-card;
+    height: 70px;
+    margin: 15px 15px 0 15px;
     border-radius: 20px;
-    height: 80px;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
 
-}
-
-@mixin margin-card-body
-{
-    margin-left: $margin-card + 5px;
-    margin-top: $margin-card - 40px;
-    margin-right: $margin-card + 5px;
+    @include desktop
+    {
+        width: 50%;
+        margin: $margin15 auto;
+    }
 }
 
 @mixin a-modif
@@ -45,52 +31,41 @@
     color: black;
 }
 
-@mixin padding-btn
-{
-    padding: 5px 60px 5px 60px;
-}
-
-@mixin color-btn
-{
-    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-}
-
 @mixin btn
 {
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     color: white;
-    @include padding-btn; 
-    border-radius: $border-radius-btn;
+    padding: 17px 43px;
+    border-radius: 60px;
     border: none;
-    margin-top: 63px;
-    margin-bottom: 104px;
-    margin-left: 82px;
-    margin-right: 82px;
-
-    &:hover
-    {
-        background: linear-gradient(to right bottom, lighten($color-secondary, 5), lighten($color-primary, 5))
-    }
+    display: block;
+    margin: 46px auto auto auto;
+    font-size: 1.1rem;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
 }
 
 @mixin btn-heart
 {
     border: none;
-    background-color: white;
-    height: 20px;
+    background-color: transparent;
+    width: 45px;
+    height: 34px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
 @mixin btn-homepage
 {
     white-space: nowrap;
-    padding: 15px 20px 15px 20px;
-    margin-top: $margin-card;
-}
+    margin-top: 20px;
+    padding: 17px 20px;
 
-@mixin margin-interior-card
-{
-    margin-left: 15px;
-    margin-right: 15px;
+    @include tablet
+    {
+        padding: 17px 43px;
+    }
 }
 
 @mixin block-news
@@ -98,10 +73,30 @@
     height: 30px;
     width: 80px;
     text-align: center;
-    margin-top: 15px;
-    margin-left: 245px;
     position: absolute;
+    margin-top: $margin15;
+    right: 20px;
     border: 2px $color-tertiary solid;
     background-color: $color-tertiary;
     border-radius: 2px;
+}
+
+/* Li-before contient les numéros 1, 2 et 3 situés dans le menu de navigation */
+
+@mixin li-before
+{
+    content: counter(li); 
+    color: white;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    background-color: #9356DC;
+    border-radius: 50%;
+    padding: 5px 4px 5px 10px;
+    font-size: 1em;
+
+    @include desktop
+    {
+        padding-right: 0px;
+    }
 }
