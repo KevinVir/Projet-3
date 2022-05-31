@@ -4,7 +4,7 @@ Projet n°3 de la formation développement WEB de OpenClassRooms. Dynamiser une 
 
 Voici le brief qui regroupe toutes les infos et recommandation sur le projet : <a href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf">ICI</a>
 
-<img src="images/capture_maquette_omf.jpg" alt="images capture maquette">
+<img src="images/capture_maquette_omf.png" alt="images capture maquette">
 
 ##  Compétences évaluées
 <ul>
