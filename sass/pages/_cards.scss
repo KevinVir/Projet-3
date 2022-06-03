@@ -76,11 +76,9 @@
 
     .card-title
     {
-        display: flex;
-        align-items: center;
         font-size: 0.94em;
         margin-left: $margin15;
-        margin-top: -8px;
+        margin-top: -8px; 
     }
 
     .card-body
@@ -97,6 +95,11 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             font-size: 0.97em;
+        }
+
+        strong
+        {
+            transition-duration: 0.50s;
         }
     
     }

@@ -100,6 +100,7 @@
     height: 100%;
     width: 65px;
     border-radius: 0 20px 20px 0;
+    transition-duration: .55s;
 
     .fa-circle-check
     {
@@ -118,7 +119,6 @@
         .btn-check
         {
             right: 0;
-            transition-duration: .50s;
         }
 
         .fa-circle-check
@@ -129,7 +129,6 @@
         strong
         {
             margin-right: 60px;
-            transition-duration: .50s;
         }
     }
 }

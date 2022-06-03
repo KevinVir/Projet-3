@@ -81,6 +81,7 @@
   height: 100%;
   width: 65px;
   border-radius: 0 20px 20px 0;
+  transition-duration: 0.55s;
 }
 .card .btn-check .fa-circle-check {
   color: white;
@@ -92,14 +93,12 @@
 }
 .card:hover .btn-check {
   right: 0;
-  transition-duration: 0.5s;
 }
 .card:hover .fa-circle-check {
   transform: rotate(0deg);
 }
 .card:hover strong {
   margin-right: 60px;
-  transition-duration: 0.5s;
 }
 
 /* ANIMATION LOADING-SPINNER*/
@@ -628,8 +627,6 @@ footer ul a.iconfooter {
   }
 }
 .card .card-title {
-  display: flex;
-  align-items: center;
   font-size: 0.94em;
   margin-left: 15px;
   margin-top: -8px;
@@ -645,6 +642,9 @@ footer ul a.iconfooter {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 0.97em;
+}
+.card .card-body strong {
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
