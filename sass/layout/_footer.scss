@@ -37,6 +37,11 @@ footer
         {
             line-height: 30px;
             margin-left: $margin15;
+
+            @include tablet
+            {
+                margin-left: -40px;
+            }
         }
             a
             {
